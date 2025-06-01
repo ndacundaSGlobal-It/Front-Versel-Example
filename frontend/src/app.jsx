@@ -4,7 +4,7 @@ function App() {
     const [repuesto, setRepuesto] = useState(null);
 
     useEffect(() => {
-        fetch("https://mi-backend-xxxxx-run.app/repuesto") // URL de Cloud Run
+        fetch("https://back-cloud-example-943729814621.europe-west1.run.app") // URL de Cloud Run
             .then(response => response.json())
             .then(data => setRepuesto(data.repuesto))
             .catch(error => console.error("Error:", error));
